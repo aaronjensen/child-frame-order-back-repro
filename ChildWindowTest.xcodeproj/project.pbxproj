@@ -13,6 +13,8 @@
 		4E8EDF252480109E0088EA2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EDF242480109E0088EA2B /* main.m */; };
 		4E8EDF302480109E0088EA2B /* ChildWindowTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EDF2F2480109E0088EA2B /* ChildWindowTestTests.m */; };
 		4E8EDF3B2480109E0088EA2B /* ChildWindowTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EDF3A2480109E0088EA2B /* ChildWindowTestUITests.m */; };
+		4E8EDF4D248013670088EA2B /* ChildWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EDF4B248013670088EA2B /* ChildWindowController.m */; };
+		4E8EDF4E248013670088EA2B /* ChildWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8EDF4C248013670088EA2B /* ChildWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		4E8EDF362480109E0088EA2B /* ChildWindowTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildWindowTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8EDF3A2480109E0088EA2B /* ChildWindowTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildWindowTestUITests.m; sourceTree = "<group>"; };
 		4E8EDF3C2480109E0088EA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E8EDF4A248013670088EA2B /* ChildWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ChildWindowController.h; path = ChildWindowTest/ChildWindowController.h; sourceTree = "<group>"; };
+		4E8EDF4B248013670088EA2B /* ChildWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ChildWindowController.m; path = ChildWindowTest/ChildWindowController.m; sourceTree = "<group>"; };
+		4E8EDF4C248013670088EA2B /* ChildWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChildWindowController.xib; path = ChildWindowTest/ChildWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		4E8EDF0F2480109D0088EA2B = {
 			isa = PBXGroup;
 			children = (
+				4E8EDF4A248013670088EA2B /* ChildWindowController.h */,
+				4E8EDF4B248013670088EA2B /* ChildWindowController.m */,
+				4E8EDF4C248013670088EA2B /* ChildWindowController.xib */,
 				4E8EDF1A2480109D0088EA2B /* ChildWindowTest */,
 				4E8EDF2E2480109E0088EA2B /* ChildWindowTestTests */,
 				4E8EDF392480109E0088EA2B /* ChildWindowTestUITests */,
@@ -231,6 +239,7 @@
 			files = (
 				4E8EDF1F2480109E0088EA2B /* Assets.xcassets in Resources */,
 				4E8EDF222480109E0088EA2B /* MainMenu.xib in Resources */,
+				4E8EDF4E248013670088EA2B /* ChildWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +266,7 @@
 			files = (
 				4E8EDF252480109E0088EA2B /* main.m in Sources */,
 				4E8EDF1D2480109D0088EA2B /* AppDelegate.m in Sources */,
+				4E8EDF4D248013670088EA2B /* ChildWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

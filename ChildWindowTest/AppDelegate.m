@@ -7,16 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "ChildWindowController.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSWindowController *childWindowController;
 @end
+
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    self.childWindowController = [[ChildWindowController alloc] initWithWindowNibName: @"ChildWindowController"];
+    [self.window addChildWindow:self.childWindowController.window ordered:NSWindowAbove];
 }
 
 
