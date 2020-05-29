@@ -13,6 +13,8 @@
 
 @property (weak) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSWindowController *childWindowController;
+@property (strong) IBOutlet NSWindowController *childWindowController2;
+@property (strong) IBOutlet NSWindowController *childWindowController3;
 @end
 
 
@@ -21,6 +23,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.childWindowController = [[ChildWindowController alloc] initWithWindowNibName: @"ChildWindowController"];
     [self.window addChildWindow:self.childWindowController.window ordered:NSWindowAbove];
+    self.childWindowController2 = [[ChildWindowController alloc] initWithWindowNibName: @"ChildWindowController"];
+    [self.window addChildWindow:self.childWindowController2.window ordered:NSWindowAbove];
+    self.childWindowController3 = [[ChildWindowController alloc] initWithWindowNibName: @"ChildWindowController"];
+    [self.window addChildWindow:self.childWindowController3.window ordered:NSWindowAbove];
 }
 
 
