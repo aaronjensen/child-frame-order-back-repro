@@ -21,16 +21,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMr-HF-Hxu">
-                        <rect key="frame" x="193" y="134" width="81" height="32"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gn-4o-q6Y">
+                        <rect key="frame" x="195" y="148" width="77" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dnr-tr-tzW">
+                        <buttonCell key="cell" type="push" title="Raise" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zsB-5Z-sBh">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="message"/>
-                            <connections>
-                                <action selector="onClick:" target="-2" id="PpS-hf-aU8"/>
-                            </connections>
+                            <font key="font" size="15" name="HelveticaNeue"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="onClickRaise:" target="-2" id="Vgn-63-oet"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMr-HF-Hxu">
+                        <rect key="frame" x="192" y="104" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Lower" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dnr-tr-tzW">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="15" name="HelveticaNeue"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="onClickLower:" target="-2" id="brz-QC-OMb"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChildWindowController : NSWindowController
-- (IBAction)onClick:(id)sender;
+- (IBAction)onClickLower:(id)sender;
+- (IBAction)onClickRaise:(id)sender;
 @end
 
 NS_ASSUME_NONNULL_END

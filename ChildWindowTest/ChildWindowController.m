@@ -21,13 +21,13 @@
     
 }
 
-- (IBAction)onClick:(id)sender {
+- (IBAction)onClickLower:(id)sender {
     NSWindow *parent = self.window.parentWindow;
     [parent removeChildWindow:self.window];
     
     NSArray<__kindof NSWindow *> *childWindows = parent.childWindows;
 
-    [self.window orderBack: NSApplication.sharedApplication];
+    // [self.window orderBack: NSApplication.sharedApplication];
     [parent addChildWindow:self.window ordered:NSWindowAbove];
     
     for (int i = 0; i < [childWindows count]; ++i) {
@@ -35,6 +35,16 @@
         [parent removeChildWindow: child];
         [parent addChildWindow: child ordered: NSWindowAbove];
     }
+}
+
+- (IBAction)onClickRaise: (id)sender {
+    NSWindow *parent = self.window.parentWindow;
+    [parent removeChildWindow:self.window];
+    
+    NSArray<__kindof NSWindow *> *childWindows = parent.childWindows;
+
+//     [self.window orderBack: NSApplication.sharedApplication];
+    [parent addChildWindow:self.window ordered:NSWindowAbove];
 }
 
 
